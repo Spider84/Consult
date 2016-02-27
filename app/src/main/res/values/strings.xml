@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Consult</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_connecting">Connecting...</string>
+    <string name="waiting_for_connection">Waitig for connection...</string>
+    <string name="km">km</string>
+    <string name="meters">m.</string>
+    <string name="liters">l</string>
+    <string name="total">Total:</string>
+    <string name="mean">Mean:</string>
+    <string name="lit_per_100">l/100km</string>
+    <string name="distance">Distance:</string>
+    <string name="lit_per_100_large">liters\n100km</string>
+    <string name="speed">Speed:</string>
+    <string name="lit_per_hour_large">liters\nHour</string>
+    <string name="caption_stop_time">Stop time:</string>
+</resources>

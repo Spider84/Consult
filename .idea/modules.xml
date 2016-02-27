@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Consult.iml" filepath="$PROJECT_DIR$/Consult.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/RoundCornerProgressBar/RoundCornerProgressBar.iml" filepath="$PROJECT_DIR$/library/RoundCornerProgressBar/RoundCornerProgressBar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/actionbarsherlock/actionbarsherlock.iml" filepath="$PROJECT_DIR$/library/actionbarsherlock/actionbarsherlock.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/usbserialforandroid/usbserialforandroid.iml" filepath="$PROJECT_DIR$/library/usbserialforandroid/usbserialforandroid.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_settings">Настройки</string>
+    <string name="title_activity_connecting">Соединение...</string>
+    <string name="waiting_for_connection">Подождите соединения...</string>
+    <string name="km">км.</string>
+    <string name="meters">м.</string>
+    <string name="liters">л.</string>
+    <string name="total">Всего:</string>
+    <string name="mean">Средний:</string>
+    <string name="lit_per_100">л/100км</string>
+    <string name="distance">Расстояние:</string>
+    <string name="lit_per_100_large">литров\n100км</string>
+    <string name="speed">Скорость:</string>
+    <string name="lit_per_hour_large">литров\nчас</string>
+    <string name="caption_stop_time">Остановка:</string>
+</resources>

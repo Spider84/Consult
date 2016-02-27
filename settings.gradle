@@ -1,0 +1,1 @@
+include ':app', ':library:RoundCornerProgressBar', ':library:usbserialforandroid', ':library:actionbarsherlock'

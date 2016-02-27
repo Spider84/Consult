@@ -1,0 +1,331 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ViewSwitcher
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:id="@+id/vsGauge"
+        android:layout_marginLeft="30dp"
+        android:layout_weight="1"
+        android:animateFirstView="false"
+        android:inAnimation="@anim/fade_in"
+        android:outAnimation="@anim/fade_out"
+        android:focusableInTouchMode="false">
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/llLeterPerHour">
+
+                <vc.spider.consult.TripBar
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:id="@+id/pbCurrentHourTrip"
+                    android:visibility="visible"
+                    android:layout_width="60dp"
+                    android:layout_height="fill_parent"
+                    android:progress="114"
+                    android:secondaryProgress="100"
+                    android:indeterminate="false"
+                    android:indeterminateOnly="false"
+                    android:progressDrawable="@drawable/verticalprogressbar_orange"
+                    android:minHeight="20dp"
+                    android:minWidth="20dp"
+                    android:max="150"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center|center_vertical|center_horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="10.5"
+                            android:id="@+id/tvCurrentHourTrip"
+                            android:textSize="120sp"
+                            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                            android:textStyle="bold"
+                            android:enabled="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                            android:text="@string/lit_per_hour_large"
+                            android:id="@+id/tvLargeHourMeasure"
+                            android:textSize="30sp"
+                            android:gravity="center" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:id="@+id/llStopTime"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="false">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/caption_stop_time"
+                            android:id="@+id/tvStopTimeCaption"
+                            android:textSize="20sp"
+                            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                            android:text="0"
+                            android:id="@+id/tvStopTime"
+                            android:textSize="20sp"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="right" />
+                    </LinearLayout>
+
+                    <ListView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/lvDebug"
+                        android:footerDividersEnabled="true"
+                        android:stackFromBottom="true"
+                        android:transcriptMode="alwaysScroll"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/llLeterPer100">
+
+            <vc.spider.consult.TripBar
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:id="@+id/pbCurrentTrip"
+                android:visibility="visible"
+                android:layout_width="60dp"
+                android:layout_height="fill_parent"
+                android:progress="114"
+                android:secondaryProgress="100"
+                android:indeterminate="false"
+                android:indeterminateOnly="false"
+                android:progressDrawable="@drawable/verticalprogressbar"
+                android:minHeight="20dp"
+                android:minWidth="20dp"
+                android:max="300"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center|center_vertical|center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10.5"
+                        android:id="@+id/tvCurrentTrip"
+                        android:textSize="120sp"
+                        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                        android:textStyle="bold"
+                        android:enabled="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                        android:text="@string/lit_per_100_large"
+                        android:id="@+id/textView8"
+                        android:textSize="30sp"
+                        android:gravity="center" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:id="@+id/llSpeed"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentStart="false">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/speed"
+                        android:id="@+id/textView3"
+                        android:textSize="20sp"
+                        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                        android:text="0"
+                        android:id="@+id/tvSpeed"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="right" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ViewSwitcher>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/llDistance">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/distance"
+                android:id="@+id/tvDistanceCapture"
+                android:textSize="30sp"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                android:text="100"
+                android:id="@+id/tvDistance"
+                android:textSize="30sp"
+                android:layout_marginLeft="5dp"
+                android:gravity="bottom|right"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                android:text="@string/km"
+                android:id="@+id/tvDistanceMeasure"
+                android:textSize="30sp"
+                android:layout_marginLeft="5dp"
+                android:phoneNumber="true"
+                android:gravity="bottom"
+                android:textColor="@android:color/secondary_text_dark" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/llTotal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/total"
+                android:id="@+id/tvTotalCapture"
+                android:textSize="30sp"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                android:id="@+id/tvTotalTrip"
+                android:textSize="30sp"
+                android:layout_marginLeft="5dp"
+                android:gravity="bottom|right"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                android:text="@string/liters"
+                android:id="@+id/tvTotalMeasure"
+                android:textSize="30sp"
+                android:layout_marginLeft="5dp"
+                android:phoneNumber="true"
+                android:gravity="bottom"
+                android:textColor="@android:color/secondary_text_dark" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:id="@+id/llMean">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mean"
+                android:id="@+id/tvMeanCapture"
+                android:textSize="30sp"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                android:textStyle="bold"
+                android:gravity="bottom" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                android:text="0"
+                android:id="@+id/tvMeanTrip"
+                android:textSize="30sp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:gravity="bottom|right" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                android:text="@string/lit_per_100"
+                android:id="@+id/tvMeanMeasure"
+                android:textSize="30sp"
+                android:layout_marginLeft="5dp"
+                android:phoneNumber="true"
+                android:gravity="bottom"
+                android:textColor="@android:color/secondary_text_dark" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
